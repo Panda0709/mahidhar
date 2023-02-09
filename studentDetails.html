@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico.jpg">
+    <link rel="stylesheet" href="./studentDetails.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Josefin+Slab:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+       
+            <div class="inner">
+                <label>FirstName</label>
+                <input type="text" name="FirstName" id="text1" placeholder="First Name" value="">
+          <!--        <label>LastName</label>
+                <input type="text" name="LastName" id="ltext1" placeholder="Last Name">
+                <label for="">Gender</label>
+                Male
+                <input type="radio" name="Gender" id="gender">
+                Female
+                 <input type="radio" name="Gender" id="gender">
+                 <label>PhoneNumber</label>
+                 <input type="number" name="number" id="number1" placeholder="PhoneNumber" required> -->
+                 <input type="submit" value="Submit" id="submit1" onclick="display()">
+                 <div class="second">
+                    <!--   Firs tName <input type="text" name="firstext" id="text2" value="">
+                      Last Name <input type="text" name="lastName" id="text3" value="">
+                      Gender <input type="text" name="gender" id="text4" value="">
+                      Phone Number <input type="text" name="Number" id="number2" value="">
+               -->
+               <p class="text2">the</p>
+                  </div>
+            </div>
+    </div>
+    <script>
+        function display(){
+            var firstext=document.getElementById("text1").value;
+            document.getElementById("text2").innerHTML=firstext;
+        }
+   
+    </script> 
+     
+    
+     
+    
+</body>
+</html>
