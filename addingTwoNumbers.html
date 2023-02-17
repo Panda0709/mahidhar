@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./addingTwoNumbers.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+        var val1=parseInt(document.getElementById("value1").value);
+        var val2=parseInt(document.getElementById("value2").value);
+        var ans=document.getElementById("ans");
+        ans.value=val1 + val2;
+    
+        }
+        function sub(){
+        var val1=parseInt(document.getElementById("value1").value);
+        var val2=parseInt(document.getElementById("value2").value);
+        var ans=document.getElementById("ans");
+        ans.value=val1 - val2;
+    
+        }
+        function mult(){
+        var val1=parseInt(document.getElementById("value1").value);
+        var val2=parseInt(document.getElementById("value2").value);
+        var ans=document.getElementById("ans");
+        ans.value=val1 * val2;
+    
+        }
+        function divi(){
+        var val1=parseInt(document.getElementById("value1").value);
+        var val2=parseInt(document.getElementById("value2").value);
+        var ans=document.getElementById("ans");
+        ans.value=val1 / val2;
+    
+        }
+   
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+        
+        <label>First Number</label>
+    <input type="text" name="value1" value="" id="value1">  
+    <label>Second Number</label>
+    <input type="text" name="value2" value="" id="value2">
+    <label>Answer</label>
+    <input type="text" name="ans" value="" id="ans" disabled>
+    <div class="funtioning">
+        <input type="submit" name="submit" value="Add" id="submit" onclick="add()">
+        <input type="submit" name="submit" value="Sub" id="submit" onclick="sub()">
+        <input type="submit" name="submit" value="Mult" id="submit" onclick="mult()">
+        <input type="submit" name="submit" value="Divi" id="submit" onclick="divi()">
+    </div> 
+</div>
+</div>
+    
+    
+</body>
+</html>
